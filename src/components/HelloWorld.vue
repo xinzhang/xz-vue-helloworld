@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <CardItem title="My Card Item" :links="links"/>
+    <CardItem title="My Card Item" links="[{text:'abc', url:'abc'}]"/>
   </div>
 </template>
 
@@ -19,7 +20,7 @@ export default {
         { text: "test", url: "http://test" },
         { text: "google", url: "http://google.com.au" }
       ]
-    }
+    };
   },
   components: {
     CardItem
